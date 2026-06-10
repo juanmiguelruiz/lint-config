@@ -4,6 +4,7 @@ export default defineConfig({
   entry: {
     index: 'src/index.ts',
     react: 'src/react.ts',
+    jest: 'src/jest.ts',
     testing: 'src/testing.ts',
     prettier: 'src/prettier.ts',
     'prettier-eslint': 'src/prettier-eslint.ts',

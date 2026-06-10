@@ -1,6 +1,6 @@
 {
   "name": "@jmrp/lint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Centralized ESLint, Prettier & Biome configs for TypeScript projects",
   "publishConfig": {
@@ -16,6 +16,10 @@
     "./react": {
       "types": "./dist/react.d.ts",
       "import": "./dist/react.js"
+    },
+    "./jest": {
+      "types": "./dist/jest.d.ts",
+      "import": "./dist/jest.js"
     },
     "./testing": {
       "types": "./dist/testing.d.ts",
