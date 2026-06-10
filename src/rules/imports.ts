@@ -5,6 +5,12 @@ export const importConfig: Linter.Config[] = [
   importXPlugin.flatConfigs.recommended,
   {
     files: ['**/*.{js,jsx,ts,tsx,mjs,cjs}'],
+    settings: {
+      'import-x/resolver': {
+        typescript: true,
+        node: true,
+      },
+    },
     rules: {
       'import-x/order': [
         'error',
