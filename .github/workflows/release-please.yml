@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   Call-Release-Please:
-    uses: juanmiguelruiz/.github/workflows/release-please.yml@main
+    uses: juanmiguelruiz/.github/.github/workflows/release-please.yml@main
     with:
       repository: ${{ github.repository }}
     secrets:
