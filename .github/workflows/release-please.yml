@@ -10,10 +10,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  Call-Release-Please:
+  release-please:
     uses: juanmiguelruiz/.github/.github/workflows/release-please.yml@main
-    with:
-      repository: ${{ github.repository }}
     secrets:
       APP_ID: ${{ secrets.JMRP_BOT_ID }}
       APP_PRIVATE_KEY: ${{ secrets.JMRP_BOT_PRIVATE_KEY }}
