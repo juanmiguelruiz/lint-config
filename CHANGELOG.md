@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.1.0...lint-config-v0.1.1) (2026-06-17)
+
+
+### Bug Fixes
+
+* rename job from Call-Publish-NPM to publish-npm in release-please workflow ([62fbc84](https://github.com/juanmiguelruiz/lint-config/commit/62fbc84814184deb3fc8e4b6b8cd1315067671b6))
+
 ## [0.1.0](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.0.2...lint-config-v0.1.0) (2026-06-17)
 
 
