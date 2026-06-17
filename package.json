@@ -1,6 +1,6 @@
 {
   "name": "@jmrp/lint-config",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "type": "module",
   "description": "Centralized ESLint, Prettier & Biome configs for TypeScript projects",
   "publishConfig": {
