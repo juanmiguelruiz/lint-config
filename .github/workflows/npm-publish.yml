@@ -1,0 +1,12 @@
+name: NPM Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  npm-publish:
+    uses: juanmiguelruiz/.github/.github/workflows/publish-npm.yml@main
+    with:
+      node-version: "24.16.0"
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
