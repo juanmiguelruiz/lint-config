@@ -15,7 +15,7 @@ jobs:
     secrets:
       APP_ID: ${{ secrets.JMRP_BOT_ID }}
       APP_PRIVATE_KEY: ${{ secrets.JMRP_BOT_PRIVATE_KEY }}y va
-  Call-Publish-NPM:
+  publish-npm:
     needs: release-please
     if: ${{ needs.release-please.outputs.releases_created == 'true' }}
     uses: juanmiguelruiz/.github/.github/workflows/publish-npm.yml@main
