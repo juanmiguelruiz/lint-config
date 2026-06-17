@@ -15,4 +15,5 @@ jobs:
     with:
       repository: ${{ github.repository }}
     secrets:
-      TOKEN: ${{ secrets.RELEASE_PLEASE_PAT }}
+      APP_ID: ${{ secrets.JMRP_BOT_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.JMRP_BOT_PRIVATE_KEY }}
