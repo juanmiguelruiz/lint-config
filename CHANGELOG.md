@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.1.1...lint-config-v0.2.0) (2026-06-17)
+
+
+### Features
+
+* add NPM publish workflow configuration ([692b315](https://github.com/juanmiguelruiz/lint-config/commit/692b3157b8e4dcf13ddf24ed961dd12b0ad80d67))
+
+
+### Bug Fixes
+
+* standardize quotes in pnpm-workspace.yaml ([19438fe](https://github.com/juanmiguelruiz/lint-config/commit/19438fe071f2403323ab8be37be929d279a30f78))
+
 ## [0.1.1](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.1.0...lint-config-v0.1.1) (2026-06-17)
 
 
