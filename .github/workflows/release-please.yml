@@ -1,4 +1,4 @@
-name: Release Please
+name: Release Please & Publish
 
 on:
   push:
@@ -14,4 +14,12 @@ jobs:
     uses: juanmiguelruiz/.github/.github/workflows/release-please.yml@main
     secrets:
       APP_ID: ${{ secrets.JMRP_BOT_ID }}
-      APP_PRIVATE_KEY: ${{ secrets.JMRP_BOT_PRIVATE_KEY }}
+      APP_PRIVATE_KEY: ${{ secrets.JMRP_BOT_PRIVATE_KEY }}y va
+  Call-Publish-NPM:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.releases_created == 'true' }}
+    uses: juanmiguelruiz/.github/.github/workflows/publish-npm.yml@main
+    with:
+      node-version: "24.16.0"
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
