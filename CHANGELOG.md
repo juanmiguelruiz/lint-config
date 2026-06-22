@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.2.0...lint-config-v0.2.1) (2026-06-22)
+
+
+### Miscellaneous
+
+* add commitlint and husky configuration for commit message validation ([0c2d7b9](https://github.com/juanmiguelruiz/lint-config/commit/0c2d7b9a4dd9f3a05c5c503f13e8ab9d6024870b))
+
 ## [0.2.0](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.1.1...lint-config-v0.2.0) (2026-06-17)
 
 
