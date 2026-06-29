@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.2.1...lint-config-v0.3.0) (2026-06-29)
+
+
+### Features
+
+* add React Native and Expo support to lint-config ([92b4952](https://github.com/juanmiguelruiz/lint-config/commit/92b4952b8dbf0a1cbeb0ae954cbe029fe91779ce))
+
 ## [0.2.1](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.2.0...lint-config-v0.2.1) (2026-06-22)
 
 
