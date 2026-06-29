@@ -36,6 +36,10 @@
     "./biome": {
       "types": "./dist/biome.d.ts",
       "import": "./dist/biome.js"
+    },
+    "./react-native": {
+      "types": "./dist/react-native.d.ts",
+      "import": "./dist/react-native.js"
     }
   },
   "files": [
@@ -60,12 +64,14 @@
     "@eslint/js": "^9.0.0",
     "eslint-config-prettier": "^10.1.0",
     "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-expo": "^1.0.3",
     "eslint-plugin-import-x": "^4.16.0",
     "eslint-plugin-jest": "^29.14.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-prettier": "^5.5.0",
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-native": "^5.0.0",
     "eslint-plugin-testing-library": "^7.15.0",
     "globals": "^16.0.0",
     "typescript-eslint": "^8.0.0"
@@ -88,6 +94,8 @@
     "biome",
     "typescript",
     "react",
+    "react-native",
+    "expo",
     "nextjs",
     "flat-config"
   ],

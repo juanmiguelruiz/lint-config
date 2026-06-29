@@ -16,6 +16,7 @@ npm install @jmrp/lint-config eslint typescript
 | `@jmrp/lint-config/react` | Base + React + Hooks + JSX a11y |
 | `@jmrp/lint-config/jest` | Base + Jest + Testing Library |
 | `@jmrp/lint-config/testing` | Testing Library only |
+| `@jmrp/lint-config/react-native` | Base + React + RN + Expo |
 | `@jmrp/lint-config/prettier-eslint` | Base + Prettier as ESLint rule |
 | `@jmrp/lint-config/prettier` | Prettier config object |
 | `@jmrp/lint-config/biome` | Biome configuration |
@@ -59,6 +60,15 @@ import base from '@jmrp/lint-config';
 import testing from '@jmrp/lint-config/testing';
 
 export default [...base, ...testing];
+```
+
+### React Native (Expo)
+
+```js
+// eslint.config.js
+import config from '@jmrp/lint-config/react-native';
+
+export default [...config];
 ```
 
 ### Prettier integrated with ESLint

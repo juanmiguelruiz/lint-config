@@ -9,6 +9,7 @@ export default defineConfig({
     prettier: 'src/prettier.ts',
     'prettier-eslint': 'src/prettier-eslint.ts',
     biome: 'src/biome.ts',
+    'react-native': 'src/react-native.ts',
   },
   format: ['esm'],
   dts: true,
