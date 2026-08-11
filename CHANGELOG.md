@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.3.0...lint-config-v0.3.1) (2026-08-11)
+
+
+### Miscellaneous
+
+* update pnpm lockfile and workspace overrides for dependency versions ([a8640f4](https://github.com/juanmiguelruiz/lint-config/commit/a8640f45909ee2a33d0e2220e85913cb967b5ceb))
+
 ## [0.3.0](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.2.1...lint-config-v0.3.0) (2026-06-29)
 
 
