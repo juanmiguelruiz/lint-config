@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.3](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.3.2...lint-config-v0.3.3) (2026-08-12)
+
+
+### Miscellaneous
+
+* enhance ESLint and testing configurations ([3adaa96](https://github.com/juanmiguelruiz/lint-config/commit/3adaa9628b4013659f027e10728f0b9ba1466c6c))
+* update dependencies in package.json and pnpm-lock.yaml ([2ea27a7](https://github.com/juanmiguelruiz/lint-config/commit/2ea27a7998ddf981a35c46e9baa06113648d754d))
+
 ## [0.3.2](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.3.1...lint-config-v0.3.2) (2026-08-12)
 
 
