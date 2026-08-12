@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.3.3...lint-config-v0.3.4) (2026-08-12)
+
+
+### Miscellaneous
+
+* update README.md with enhanced configuration details ([031c26f](https://github.com/juanmiguelruiz/lint-config/commit/031c26f9378aa80bbb676a924a5cb3568dab52e9))
+
 ## [0.3.3](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.3.2...lint-config-v0.3.3) (2026-08-12)
 
 
