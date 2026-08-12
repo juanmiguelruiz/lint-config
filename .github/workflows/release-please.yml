@@ -20,6 +20,6 @@ jobs:
     if: ${{ needs.release-please.outputs.releases_created == 'true' }}
     uses: juanmiguelruiz/.github/.github/workflows/publish-npm.yml@main
     with:
-      node-version: "24.16.0"
+      node-version: "24.19.0"
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
