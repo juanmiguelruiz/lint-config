@@ -1,6 +1,6 @@
 {
   "name": "@jmrp/lint-config",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "type": "module",
   "overrides": {
     "brace-expansion@1": "1.1.18",
