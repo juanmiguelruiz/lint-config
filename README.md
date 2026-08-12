@@ -1,22 +1,24 @@
 # @jmrp/lint-config
 
-Shareable ESLint, Prettier, and Biome configurations for TypeScript projects. Uses flat config and supports React, Jest, and Testing Library out of the box.
+Shareable ESLint, Prettier, and Biome configurations for TypeScript projects. Uses ESLint Flat Config and supports React, React Native, Jest, and Testing Library out of the box.
 
 ## Installation
 
 ```bash
-npm install @jmrp/lint-config eslint typescript
+npm install --save-dev @jmrp/lint-config eslint typescript
 ```
+
+The package requires Node.js >= 22.0.0 and ESLint >= 9.0.0.
 
 ## Entry Points
 
 | Import | Includes |
 |--------|----------|
 | `@jmrp/lint-config` | Base JS/TS + import rules |
-| `@jmrp/lint-config/react` | Base + React + Hooks + JSX a11y |
+| `@jmrp/lint-config/react` | Base + ESLint React + Hooks + JSX a11y |
 | `@jmrp/lint-config/jest` | Base + Jest + Testing Library |
 | `@jmrp/lint-config/testing` | Testing Library only |
-| `@jmrp/lint-config/react-native` | Base + React + RN + Expo |
+| `@jmrp/lint-config/react-native` | Base + renderer-agnostic React + RN + Expo |
 | `@jmrp/lint-config/prettier-eslint` | Base + Prettier as ESLint rule |
 | `@jmrp/lint-config/prettier` | Prettier config object |
 | `@jmrp/lint-config/biome` | Biome configuration |
@@ -109,16 +111,32 @@ export default config;
 - `import-x/order`: alphabetical with groups
 - `curly`: multi-line
 
-## Peer Dependencies
+React-specific rules include:
 
-- `eslint` >= 9.0.0
-- `typescript` >= 5.0.0 (optional)
+- `@eslint-react/no-missing-key`: error
+- `@eslint-react/jsx-no-key-after-spread`: error
+- `react-hooks/rules-of-hooks`: error
+- `react-hooks/exhaustive-deps`: warning
+- `@stylistic/jsx-curly-brace-presence`: error
+- `@stylistic/jsx-self-closing-comp`: error
+- `jmrp-react/no-jsx-literals`: error
 
-The React and React Native entry points require Node.js >= 22.0.0. Their React rules
-are provided by `@eslint-react/eslint-plugin`; stylistic JSX rules are provided by
-`@stylistic/eslint-plugin`. The former `eslint-plugin-react` dependency is no longer
-used. `jsx-no-literals` remains available as the internal `jmrp-react/no-jsx-literals`
-rule because it has no direct replacement.
+`jmrp-react/no-jsx-literals` preserves the previous `jsx-no-literals` behavior for
+JSX children while ignoring props. It is implemented locally because there is no
+direct equivalent in ESLint React.
+
+## Development
+
+```bash
+pnpm check       # typecheck, build and complete test suite
+pnpm test        # build and run tests
+pnpm test:unit   # run tests against the existing dist/ build
+```
+
+The React entry point uses `@eslint-react/eslint-plugin` with its TypeScript preset.
+The React Native entry point uses renderer-agnostic React and JSX rules, together
+with `eslint-plugin-react-native` and `eslint-plugin-expo`; DOM-specific rules are
+not enabled there. Stylistic JSX rules are provided by `@stylistic/eslint-plugin`.
 
 ## License
 
