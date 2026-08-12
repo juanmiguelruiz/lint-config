@@ -1,13 +1,15 @@
 import tseslint from 'typescript-eslint';
-import reactPlugin from 'eslint-plugin-react';
+import eslintReactPlugin from '@eslint-react/eslint-plugin';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import baseConfig from './index';
-import { reactRules } from './rules/react';
+import { reactPlugins, reactRules } from './rules/react';
 
 const pluginConfigs = [
-  reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat['jsx-runtime'],
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    ...eslintReactPlugin.configs['recommended-typescript'],
+  },
   reactHooksPlugin.configs.flat.recommended,
 ].filter((config) => config != null);
 
@@ -16,6 +18,9 @@ export default tseslint.config(
   ...pluginConfigs,
   jsxA11yPlugin.flatConfigs.recommended,
   {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } },
+    plugins: reactPlugins,
     settings: { react: { version: 'detect' } },
   },
   reactRules,

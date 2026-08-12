@@ -114,6 +114,12 @@ export default config;
 - `eslint` >= 9.0.0
 - `typescript` >= 5.0.0 (optional)
 
+The React and React Native entry points require Node.js >= 22.0.0. Their React rules
+are provided by `@eslint-react/eslint-plugin`; stylistic JSX rules are provided by
+`@stylistic/eslint-plugin`. The former `eslint-plugin-react` dependency is no longer
+used. `jsx-no-literals` remains available as the internal `jmrp-react/no-jsx-literals`
+rule because it has no direct replacement.
+
 ## License
 
 MIT
