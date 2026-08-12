@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.2](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.3.1...lint-config-v0.3.2) (2026-08-12)
+
+
+### Miscellaneous
+
+* add package overrides for dependency versions in package.json ([6b3b989](https://github.com/juanmiguelruiz/lint-config/commit/6b3b9898c13c60c999230ac8a9ef764e90e3a2a3))
+* specify package manager version in package.json ([fdcc854](https://github.com/juanmiguelruiz/lint-config/commit/fdcc854cdb6ec99ef3b916a33c7e2782085196cc))
+* update .gitignore and remove package manager version from package.json ([c0fb162](https://github.com/juanmiguelruiz/lint-config/commit/c0fb16200693314bc677da1458b5fd2908811d20))
+* update Node.js version in .nvmrc to v24.19.0 ([c197a24](https://github.com/juanmiguelruiz/lint-config/commit/c197a24e9bdbed262f67a164d7acbd4e412cc1ae))
+* update Node.js version in GitHub workflows to 24.19.0 ([f9bc77e](https://github.com/juanmiguelruiz/lint-config/commit/f9bc77eb438b622b6924c6296181832aec95fb69))
+
 ## [0.3.1](https://github.com/juanmiguelruiz/lint-config/compare/lint-config-v0.3.0...lint-config-v0.3.1) (2026-08-11)
 
 
